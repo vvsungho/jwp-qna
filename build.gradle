@@ -17,6 +17,10 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.assertj:assertj-core:3.19.0'
+
+
+	// jpa not null check, 없으면 자바메모리상에는 notnull허용 있으면 메모리상에서조차도 notnull
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 test {
